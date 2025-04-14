@@ -27,8 +27,6 @@ async def on_message(message):
         return
     res = ["Hey!", "What's going on?","Hello there.","Yo-"]
     await message.channel.send(random.choice(res))
-    await client.process_commands(message)
-
 client.run(TOKEN)
 
 
